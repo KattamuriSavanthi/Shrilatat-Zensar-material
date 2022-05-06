@@ -1,0 +1,96 @@
+tag - <tag></tag>
+<!-- comment -->
+
+<b> - bold
+<u> - underline
+<i> - italics
+<br> - line break
+Header tags : <h1>...<h6>
+<p> - paragraph
+<hr> - horizontal ruler
+<ul> - Unordered List / bulleted list
+<ol> - Ordered List / numbered list
+<li> - List Item
+<img src>
+<table>, 
+<tr> - table row
+<td> - table data
+
+<a href="url"> Link </a>
+
+
+
+attribute: special meaning to a tag
+- mandatory
+- optional
+
+<tag attr1="value1"   attr2=value2  attr3=value3>
+<body>
+background
+bgcolor
+text
+
+Relative paths  ., ..
+Absolute path
+
+
+forms : HTML4
+
+Form elements: 9+3
+9 -> <input type='???' >
+
+Text-based:
+- text
+- password
+- hidden
+
+Button-based:
+- button  -- ordinary button
+- submit  -- submits the form to the server!
+- reset
+
+Misc based:
+- radio
+- checkbox
+- file
+
+
+- Textarea  <textarea>
+- button  <button>
+- drop down list control  <select><option>
+
+
+
+character entity:
+syntax : &<entity>;
+
+space : &nbsp;
+greater than : &gt;
+
+
+
+Container/content tags:
+- <p> : para
+- <div> : division
+- <span>
+
+
+html5:
+Form elements: value, name, checked, readonly, maxlength
+
+14 NEW ATTRIBUTES: 4, 3-4
+
+- required  : makes the field mandatory
+- autofocus
+
+
+
+ 
+
+
+
+
+
+
+
+
