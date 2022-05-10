@@ -1,0 +1,267 @@
+HTML - HyperText Markup language
+
+
+programming language
+
+HTML4:
+
+Registration.html:
+- username - 8-15 chars, mandatory, alpabets
+
+<input type="text" maxlength minlength>
+
+- password - 8-15 chars, at least 1 sp char, 1 digit, 1 upperchar, mandatory
+- confirm password - password and c.password must match
+
+
+Order.html:
+- billing date - date, mandatory
+- shipping date - date, mandatory
+
+HTML page:
+
+client side validation
+event handling
+
+
+scripting language - javascript
+js - Netscape labs - 1995
+js - ECMA  
+javascript -> Ecmascript
+JS - ES5, 6
+
+
+JS: 3 reasons:
+- client side validation
+- event handling
+- DOM manipulation
+
+JS- 2 parts:
+- language fundamentals
+- DOM
+
+
+
+where can i write script?
+- <head>
+- <body>
+- external file (.js)
+
+
+
+C, Java, C#
+
+C, c++, java - syntax
+
+c, c++, java, c#  - strongly typed lang
+
+data types : int, float, double, long, short, char, string, boolean
+
+int i;  //var with a data type
+float sal;
+char ch = 'a'
+
+
+javascript : typeless languages / loosely typed language
+
+number 10;
+
+
+functions:
+- user defined funcs
+- predefined/built-in funcs
+
+
+f1 : no arg, no return type
+f2 : single arg, still no ret type
+f3 : multiple args, return type was there
+
+function name(){....}
+
+<html>
+    <head>
+      <script>
+          function greet(){
+              document.write("hello world")
+          }
+
+          function greetUser(ename){
+            document.write("hello " + ename)
+          }
+
+          function add(a,b){
+             return a+b;
+          }
+      </script>
+    </head>
+    <body>
+        <h1>Welcome to Javascript</h1>
+        <script>
+            greet()
+            greetUser("Ankit")
+            var sum = add(10,20)
+            console.log(sum)
+        </script>
+    </body>
+</html>
+
+
+--------------------------------------
+
+write a JS func avg() that accepts 5 numeric arguments and returns the average of the 5 numbers
+
+---------  func expr ----------------
+
+var greet1 = function(){
+            document.write("hello world")
+        }
+       greet1()
+
+       function greetUser(ename){
+            document.write("hello " + ename)
+        }
+
+        var greetUser1 = function(empName){
+            document.write("hello " + empName)
+        }
+        greetUser1("Shubham")
+
+        function add(a,b){
+             return a+b;
+          }
+
+        var add1 = function(x,y){
+            return x+y
+        }
+       document.write(add1(100,200))
+
+
+---------------------------
+
+types of var scope:
+- global vars : any var outside a func
+- local vars : any var within a func
+
+function f1(){
+   var i = 10;
+
+}
+---------------------------------------------
+
+
+Predef funcs:
+- parseInt()
+- parseFloat()
+- isFinite()    boolean
+- isNaN()       isXXX()   boolean
+
+--------------------------------------
+Java, C++, C#
+
+class Emp{
+  id, ename, sal, desg, doj
+
+   showEmpDetails(){....}
+   incrSal(per){....}
+   changeDesig(){....}
+
+}
+
+Emp e1 = new Emp(101,"aaa",20000,"ASE")  obj
+Emp e2 = new Emp(102,"bbb",20000,"ASE")  obj
+Emp e3 = new Emp(103,"ccc",20000,"ASE")
+
+e1.incrSal(10)
+
+e3.showEmpDetails()
+
+obj.method()
+e1.
+-----------------------------------------------
+
+Javascript:
+- pre defined / built-in objects
+- user defined objects  - 2 techn
+
+
+Javascripts: rules for JS objects:
+- Every obj exposes properties and methods
+   o1.prop
+   o1.method()
+
+- Every prop is read/write
+
+console.log(e1.sal)  read val of sal
+e1.sal = 3000   writing prop
+
+
+
+pre defined / built-in objects:
+- string
+- math
+- date
+- array
+
+
+
+
+<script>
+           var d1 = new Date()
+           console.log(d1)
+           console.log(d1.getHours())  //17
+           console.log(d1.getMonth())  //4
+           console.log(d1.getFullYear()) //2022
+           console.log(d1.getDay())  //2
+           console.log(d1.getDate())
+
+           
+
+        </script>
+
+
+
+-------------------------------
+<script>
+
+            ///homogenous  js - heterogenous
+           //var a1 = new Array(100,200,300,400,500,600)
+
+           var a1 = [10,20,30,40]
+
+          /* for(i=0 ; i < a1.length ; i++)
+             console.log(a1[i]) */
+           
+           /* for(element in a1)  //index pos
+             console.log(element) */
+
+            for(element of a1)  //actual element
+             console.log(element)
+
+
+        </script>
+
+
+-------------------------------
+
+
+
+Ass : 5, 6, 8, 10, 15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
