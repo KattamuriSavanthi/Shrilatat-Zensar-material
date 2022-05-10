@@ -1,0 +1,127 @@
+Recap : HTML
+HTTP methods : get, post
+
+html5:
+Form elements: 
+
+<input type=text required>
+
+14 NEW ATTRIBUTES: 
+
+- required  : makes the field mandatory
+- autofocus
+- placeholder=msg
+- pattern
+- min
+- max
+
+
+<input type=?>  9
+HTML5 : 13 new form elements!!
+
+- email 
+- number  min, max
+- range : slider control
+- url
+- color
+- date
+
+container tags: 
+- <section>
+- <aside>
+- <header>  
+- <article>
+- <footer>
+- <fig>
+- <nav>
+
+
+<figure>
+   <img src>
+   <figcaption>caption to my image</figcaption>
+</figure>
+
+
+
+
+Client side validation  (presentation validation)
+HTML5 : 
+- required
+- maxlength, minlength
+- min, max
+- pattern
+
+- number, email, date, url, tel, 
+
+
+<input type=text pattern="^[a-z][a-z0-9]*$">
+
+server side authenticate
+
+
+
+Username : <input name="t1"   required minlength=5 maxlength=12>
+
+password : <input type="pass.." pattern="" >
+
+
+<form action=url method="post">
+
+
+
+</form>
+
+
+HTTP methods:   W3Cg
+get  - fetch server
+post - post to server, login page, reg 
+put
+delete
+head
+trace
+options
+command
+
+
+
+
+
+
+
+<body bgcolor="grey" background="a.gif"> XXXX 
+
+body{background-color:grey}
+
+inserting css:
+- embedded
+- inline  <p style="color:red">para-1</p>
+- external (styles.css)
+
+
+Selectors:
+- tag selectors  p{}, h1{},    div,a{}
+   div p{}
+- id selector  #id-name
+- class selector .class-name
+
+
+p{}  <p>
+h1{}  <h1>
+body{}  <body>
+h2,h3,h4{}
+tr{}  <tr>
+
+
+
+npm install –g  typescript
+npm install -g @angular/cli 
+
+
+
+
+
+
+
+
+
+
