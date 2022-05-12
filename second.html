@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <h1>Welcome to Javascript</h1>
+        <script>
+           /* function myFilter(arr){
+              var filArrr = []
+              for(ele of arr){
+                  if(ele%2 == 0)
+                     filArrr.push(ele)
+              }
+              return filArrr;
+           } */
+
+           /* var arr = [11,22,33,44,55,66,77,88]
+           //console.log(myFilter(arr))
+
+          var newArr = arr.filter(function(ele){
+                          return (ele%2 == 0)
+                       })
+         // console.log(newArr)
+
+          var a1 = [1,2,3,4,5,6,7,8]
+          var a2 = ["Shubham","Chandrashekar","Joy","Soha","Dia","Humsikha"]
+
+          var sqarr = a1.map(function(ele){
+              return (ele*ele)
+          })
+         // console.log(sqarr)
+          
+          var lenArr = a2.map(function(e){
+              return e.toUpperCase()
+          })
+         // console.log(lenArr)
+
+          //tradiotional for loop, for(ele of arr)
+          a2.forEach(function(ele){
+              console.log(ele.toUpperCase(), ele.length, ele.concat(" Zensar"))
+          }) */
+
+          var a1 = [11,45,23,12,78,90,55, 15]
+          var a2 = a1.filter(function(ele){
+              if(ele > 20)
+              return ele
+          })
+         //console.log(a2)
+
+          var res = a1.find(function(ele){
+              if(ele > 20)
+              return ele
+          })
+          console.log(res)
+
+          var names = ["Shubham", "Vinita","Nisha","Veena"]
+          var found = names.find(function(ele){
+              if(ele.startsWith("V"))
+                 return ele
+          })
+          console.log(found)
+
+          var persons = [
+              {pname:"Ankit",age:22},
+              {pname:"Himsikha",age:23},
+              {pname:"Dipali",age:21},
+              {pname:"Neha",age:24},
+          ]
+          var obj = persons.find(function(ele){
+              if(ele.age > 22)
+                 return ele
+          })
+
+          console.log(obj)
+        </script>
+    </body>
+</html>
