@@ -1,0 +1,123 @@
+var i;
+
+ES6: 2 others ways to define 
+
+const : allows to create a const identifier
+let i
+
+-------------
+
+<script>
+           var greet1 = function(){
+               document.write("hello world")
+           }
+          greet1()
+
+          //fat arrow functions, lambda
+          var greet2 = () => document.write("hello world")
+
+          var greetUser1 = function(empName){
+              document.write("hello " + empName)
+          }
+
+         var greetUser2 = empName => document.write("hello " + empName)
+         greetUser2("Neha")
+
+         var add1 = function(x,y){
+            return x+y
+        }
+
+        var add2 = (a,b) => a+b
+
+        console.log(add2(33,44))
+
+        var strOps = function(str){
+            //display uppercase
+            //display str length
+            //display last char in str
+        }
+
+        var strOps1 = str => {
+            console.log(str.toUpperCase())
+            console.log(str.length)
+            console.log(str.charAt(str.length - 1))
+        }
+        strOps1("hello world")
+        </script>
+
+-------------------------
+
+DOM ( Document Object Model)
+
+- Client side validation
+- event handling
+- DOM manipulation
+
+
+obj.prop
+
+person.pname
+person.address.city
+
+document.write("hello")
+
+
+<div>  </div>
+
+innerHTML  - javascript property
+
+<h1>  </h1>
+
+<p>   </p>
+
+<ul>  </ul>
+
+
+<tag>  </tag>
+
+when to use?
+- value? when i want to put value into text elements at runtime
+- innerHTML? when i want to put value between tags at runtime
+
+<div>, <p>, <section>, <h1>,   : block element
+ <span>  inline element
+
+text elements - username, password, textarea
+
+chechbox, dropdown, radio
+
+-------------- style-------------
+
+<html>
+    <head>
+      <script>
+        function change(){
+           var plist =  document.getElementsByTagName("p")
+           for(para of plist){
+               //para.innerHTML = "New contents"
+              para.style.color = "blue"
+              para.style.fontSize = 20
+           }
+        }
+      </script>
+    </head>
+    <body>
+        <h1>Welcome to Javascript</h1>
+        <p>This is para-1</p>
+        <p>This is para-2</p>
+        <p>This is para-3</p>
+        <p>This is para-4</p>
+        <p>This is para-5</p>
+        <input type="button" value="Change" onclick="change()"><br>
+       
+    </body>
+</html>
+
+
+----------------------------
+
+document.getElementsByClassName("c1")
+
+
+
+
