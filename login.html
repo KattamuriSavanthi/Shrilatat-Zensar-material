@@ -1,54 +1,55 @@
 <html> 
+  <head>
+    <style>
+      span{color:red}
+    </style>
+    <script>
+        function validateUserName(){
+            var username = document.getElementById("uname").value
+            if(username.length < 5 || username.length > 15){
+              document.getElementById("s1").innerHTML = ("username length not in range!")
+              document.getElementById("uname").focus()
+              return false
+            }
+            else{
+              document.getElementById("s1").innerHTML = ""
+              return true;
+            }
+        }
+
+        function validatePassword(){
+            var pass = document.getElementById("password").value
+            if(pass.length < 6){
+              document.getElementById("s2").innerHTML = ("Password length canot be less than 6 chars!")
+              document.getElementById("password").focus()
+              return false
+            }
+            else if(pass.indexOf("@") == -1){
+              document.getElementById("s2").innerHTML = ("Password must contain @!")
+              document.getElementById("password").focus()
+              return false
+            }
+            return true;
+        }
+
+        function validate(){
+          if (validateUserName() && validatePassword())
+             return true;
+          else 
+            return false
+        }
+    </script>
+  </head>
   <body> 
      <h1>Login</h1>
-     <hr>
-     <form action="url" method="get">
-       Username : <input type="text"
-                         name="uname"
-                         value="shrilata"
-                         maxlength="10"
-                         minlength="3"
-                         readonly> <br>
-
-
-
-       Password : <input type="password" name="t2"> <br>
-       
-      <!--  Address : <textarea cols="5" rows="5"></textarea> -->
-       
+     <form onsubmit="return validate()">
+       Username : <input type="text" id="uname" required > <span id="s1"></span><br>
+       Password : <input type="password" id="password" required> <span id="s2"></span><br>
        <br>
-       Gender: 
-       <input type="radio" name="r1">Male
-       <input type="radio" name="r1">Female
-
-       <br>
-       Hobbies:
-        <input type="checkbox" name="hobbies">Reading
-        <input type="checkbox" checked name="hobbies">Coding
-        <input type="checkbox" name="hobbies">Swimming
-        <input type="checkbox">Sleeping
-   <br>
-      <!--  <input type="file"> -->
-       <br>
-    
-     Skills:
-       <select name="skills" multiple>
-         <option>HTML</option>
-         <option>Javascript</option>
-         <option>SQL</option>
-         <option>C#</option>
-         <option>Java</option>
-         <option selected>---select-----</option>
-       </select>
-    
-       <br>
-
-       <button type="submit">some text</button>
-
-<br><br>
-       <input type="submit" value="Click me">
+       <input type="submit" value="Login" >
        <input type="reset">
      </form>
+     <span id="s1"></span>
      
   </body>
 </html>
